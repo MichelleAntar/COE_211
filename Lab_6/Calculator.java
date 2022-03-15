@@ -64,8 +64,12 @@ switch(operator){
         /**
          * Enter logic
          */
-        int division= a/b;
-        return division+"";
+          if(a%b == 0) {
+		return( a + "/" + b + "=" + (a/b) );
+			} else {
+			double e = a/(double)b;
+			return( a + "/" + b + "=" + (a/(double)b) );
+	  }
 
     }
     
